@@ -1,0 +1,30 @@
+@mixin mobileMid {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1{
+    @include mobileMid();
+    position: relative;
+    top:-70px;
+    .pic{
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .textBox{
+        width: 90%;
+        margin: 40px auto;
+        text-align: center;
+        h2{
+            font-size: $MobileSecondaryHeader;
+        }
+        p{
+            margin: 10px auto;
+        }
+    }
+}

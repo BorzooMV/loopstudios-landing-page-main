@@ -1,0 +1,10 @@
+@import './fontsAndColors';
+@import './headerAndIntro';
+@import './body';
+@import './mediaqueries';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

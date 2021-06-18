@@ -1,0 +1,25 @@
+//Colors
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$DarkGray: hsl(0, 0%, 55%);
+$VeryDarkGray: hsl(0, 0%, 41%);
+
+
+//Fonts
+$fontAlata:'Alata', sans-serif;
+$fontSans:'Josefin Sans', sans-serif;
+
+$MobileSecondaryHeader:2rem;
+
+h2{
+    font-family: $fontSans;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 2.5rem;
+}
+
+p{
+    font-family: $fontAlata;
+    color: $DarkGray;
+}
