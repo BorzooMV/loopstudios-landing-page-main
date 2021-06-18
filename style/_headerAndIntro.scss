@@ -16,11 +16,14 @@
             font-family: $fontAlata;
         }
         .menu{
-            span{
+            button{
                 font-size: 1.5rem;
                 font-family: $fontSans;
                 position: relative;
                 top: 7px;
+                color: $White;
+                border: none;
+                background: none;
             }
         }
     }
@@ -42,5 +45,57 @@
 }
 
 .menuActive{
+    display: block;
+    position: absolute;
+    overflow:hidden;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: $White;
+    z-index: 3;
+    .top{
+        display: flex;
+        padding: 40px 30px;
+        justify-content: space-between;
+        .menuLogo{
+            h1{
+                font-size: 2rem;
+                font-family: $fontAlata;
+            }
+        }
+        button{
+            font-size: 1.5rem;
+            font-family: $fontSans;
+            position: relative;
+            top: 7px;
+            color: $White;
+            border: none;
+            background: none;
+        }
+    }
+    ul{
+        position: relative;
+        list-style: none;
+        left: 30px;
+        top:100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        li{
+            height: 70px;
+            a{
+                color: $White;
+                text-decoration: none;
+                font-size: 2rem;
+                font-family: $fontSans;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.menuDisable{
     display: none;
 }

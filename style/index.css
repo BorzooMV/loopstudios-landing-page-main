@@ -6,6 +6,14 @@ h2 {
   line-height: 2.5rem;
 }
 
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2rem;
+}
+
 p {
   font-family: "Alata", sans-serif;
   color: #8c8c8c;
@@ -29,11 +37,14 @@ p {
 .headerAndIntro header .logo {
   font-family: "Alata", sans-serif;
 }
-.headerAndIntro header .menu span {
+.headerAndIntro header .menu button {
   font-size: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
   position: relative;
   top: 7px;
+  color: white;
+  border: none;
+  background: none;
 }
 .headerAndIntro .intro p {
   color: white !important;
@@ -49,6 +60,56 @@ p {
 }
 
 .menuActive {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  z-index: 3;
+}
+.menuActive .top {
+  display: flex;
+  padding: 40px 30px;
+  justify-content: space-between;
+}
+.menuActive .top .menuLogo h1 {
+  font-size: 2rem;
+  font-family: "Alata", sans-serif;
+}
+.menuActive .top button {
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  top: 7px;
+  color: white;
+  border: none;
+  background: none;
+}
+.menuActive ul {
+  position: relative;
+  list-style: none;
+  left: 30px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menuActive ul li {
+  height: 70px;
+}
+.menuActive ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.menuDisable {
   display: none;
 }
 
@@ -76,6 +137,141 @@ p {
 }
 .p1 .textBox p {
   margin: 10px auto;
+}
+
+.p2 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.p2 h2 {
+  font-size: 2rem;
+  text-align: center;
+  height: 80px;
+}
+.p2 .creationCards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+}
+.p2 .creationCards .creationCard {
+  position: relative;
+  height: 150px;
+  width: 100%;
+}
+.p2 .creationCards .creationCard h3 {
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  top: 20%;
+  left: 7%;
+  width: 40%;
+  z-index: 3;
+}
+.p2 .creationCards #creation_card_1 {
+  background: url("../images/mobile/image-deep-earth.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 .creationCards #creation_card_2 {
+  background: url("../images/mobile/image-night-arcade.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 .creationCards #creation_card_3 {
+  background: url("../images/mobile/image-soccer-team.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 .creationCards #creation_card_4 {
+  background: url("../images/mobile/image-grid.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 .creationCards #creation_card_5 {
+  background: url("../images/mobile/image-from-above.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 .creationCards #creation_card_6 {
+  background: url("../images/mobile/image-pocket-borealis.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 .creationCards #creation_card_7 {
+  background: url("../images/mobile/image-curiosity.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 .creationCards #creation_card_8 {
+  background: url("../images/mobile/image-fisheye.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.p2 #btnSeeAll {
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 10px auto;
+  width: 50%;
+  height: auto;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: none;
+}
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+footer .lg h1 {
+  color: white;
+  font-family: "Alata", sans-serif;
+  margin-top: 30px;
+}
+footer ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer ul li {
+  height: 50px;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+  font-size: 1.2rem;
+}
+footer .links {
+  position: relative;
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  margin: 0px auto;
+}
+footer .links span {
+  color: white;
+  font-size: 2rem;
+}
+footer .copy {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 @media all and (max-width: 576px) {

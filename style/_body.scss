@@ -28,3 +28,95 @@
         }
     }
 }
+
+.p2{
+    @include mobileMid();
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: $MobileSecondaryHeader;
+        text-align: center;
+        height: 80px;
+    }
+    .creationCards{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 10px;
+        .creationCard{
+            position: relative;
+            height: 150px;
+            width: 100%;
+            h3{
+                font-size: $MobileThirdHeader;
+                color: $White;
+                position: relative;
+                top: 20%;
+                left: 7%;
+                width: 40%;
+                z-index: 3;
+            }
+        }
+        #creation_card_1{
+            background:url("../images/mobile/image-deep-earth.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            
+        }
+        #creation_card_2{
+            background:url("../images/mobile/image-night-arcade.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        #creation_card_3{
+            background:url("../images/mobile/image-soccer-team.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+           
+        }
+        #creation_card_4{
+            background:url("../images/mobile/image-grid.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        #creation_card_5{
+            background:url("../images/mobile/image-from-above.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        #creation_card_6{
+            background:url("../images/mobile/image-pocket-borealis.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+           
+        }
+        #creation_card_7{
+            background:url("../images/mobile/image-curiosity.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        #creation_card_8{
+            background:url("../images/mobile/image-fisheye.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    #btnSeeAll{
+        border: 1px solid black;
+        padding: 10px 20px;
+        margin: 10px auto;
+        width: 50%;
+        height: auto;
+        font-family: $fontAlata;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        background: none;
+    }
+}

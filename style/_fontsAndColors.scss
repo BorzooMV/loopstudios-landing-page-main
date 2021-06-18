@@ -10,6 +10,7 @@ $fontAlata:'Alata', sans-serif;
 $fontSans:'Josefin Sans', sans-serif;
 
 $MobileSecondaryHeader:2rem;
+$MobileThirdHeader:1.5rem;
 
 h2{
     font-family: $fontSans;
@@ -17,6 +18,14 @@ h2{
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 2.5rem;
+}
+
+h3{
+    font-family: $fontSans;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2rem;
 }
 
 p{
